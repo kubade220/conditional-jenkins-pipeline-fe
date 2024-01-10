@@ -1,13 +1,13 @@
 version: "3.7"
 
 services:
-  main:
+  frontend:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: main-repo
+    container_name: FE
     ports:
-      - 8080:5000
+      - "8888:80"
     networks:
       - conditional-pipeline
 
